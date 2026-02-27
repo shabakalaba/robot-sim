@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+backend-api/node_modules/
+robot-sim/node_modules/
+
+# OS
+.DS_Store
+
+# Database (local dev)
+backend-api/database.db
+backend-api/database.sqlite
+
+# Backend build + env
+backend-api/dist
+backend-api/.env
+backend-api/.env.*

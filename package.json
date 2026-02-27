@@ -1,0 +1,12 @@
+{
+  "name": "rohirrim",
+  "private": true,
+  "scripts": {
+    "start": "concurrently -n api,web \"npm run start --prefix backend-api\" \"npm run dev --prefix robot-sim\"",
+    "db:reset": "node -e \"try{require('fs').unlinkSync('backend-api/database.db');console.log('Database reset');}catch(e){if(e.code!=='ENOENT')throw e}\"",
+    "postinstall": "npm install --prefix backend-api && npm install --prefix robot-sim"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

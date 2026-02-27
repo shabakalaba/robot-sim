@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2527;
+}
+
+#root {
+  padding: 30px;
+}
+
+.x-row {
+  display: flex;
+}
+
+.instructions {
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  background-color: #2e3537;
+  border-radius: 15px;
+}
+
+.table-place {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 0;
+  border: 1px solid white;
+  background: #293538;
+}
+
+.active {
+  position: relative;
+}
+
+img {
+  display:none;
+}
+
+.active img {
+  display: inline-block;
+}
+
+.active::after {
+  content: '^';
+  position: absolute;
+  height: 125px;
+  width: 125px;
+  font-size: 30px;
+  text-align: center;
+}
